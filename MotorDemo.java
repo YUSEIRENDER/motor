@@ -1,47 +1,27 @@
-import java.util.Scanner;
-
 public class MotorDemo 
 {
     
     public static void main(String[] args) 
     {
-        Scanner entre =  new Scanner(System.in);
+        Motor m[] = new Motor[5];
         
-        Motor Motvetor[] = new Motor[5];      
-        
-        for(int i = 0; i < Motvetor.length; i++)
-        {
+        m[0] = new Motor("BMW",2.0,true);
+        m[1] = new Motor("AUDI",2.0,true);
+        m[2] = new Motor("FIAT",1.3,true);
+        m[3] = new Motor("CITROEN",1.6,false);
+        m[4] = new Motor("TOYOTA",2.0,false);
             
-            String nome;
-            double pontencia;
-            boolean ligado;
-            
-            System.out.println("Digite o modelo do motor:");
-            nome = entre.nextLine();
-            
-            System.out.println("Digite a potencia do motor:");
-            pontencia = entre.nextDouble();
-            
-            System.out.println("Digite o estado atual do motor:");
-            ligado = entre.nextBoolean();
-            
-            Motvetor[i] = new Motor(nome, pontencia, ligado);
-            
-        }
-        
-        for(int i = 0; i < Motvetor.length; i++)
-        {
-            
-            if(Motvetor[i] = Produto(ligado));
+            for(Motor mot1:m)
             {
                 
+                if(mot1.equals(mot1))
+                {
+                    
+                    mot1.mostrar();
+                    
+                }    
                 
-                
-            }
-            
-            
-        }
-        
+            }    
     }
     
 }
